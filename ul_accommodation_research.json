@@ -1,0 +1,505 @@
+{
+  "accommodations": [
+    {
+      "name": "The Quigley Residence",
+      "location": "On-Campus",
+      "description": "Exclusively dedicated to postgraduate and medical students, The Quigley Residence is located on the North Campus adjacent to the Medical School and Irish World Academy. It offers a quieter, mature environment conducive to study. The residence shares a reception with Cappavilla Village and features modern apartments in an attractive landscaped setting.",
+      "roomTypes": [
+        "4-bedroom apartment (Ensuite)",
+        "2-bedroom apartment (Ensuite)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "Ensuite bathrooms",
+        "Refuse collection",
+        "Full access to UL Sport gym & pool",
+        "Bike storage",
+        "Landscaped grounds",
+        "24/7 Security patrols",
+        "Launderette (shared with Cappavilla)"
+      ],
+      "pros": [
+        "Exclusively for postgraduate students, ensuring a quiet study environment",
+        "Located on-campus, close to Health Sciences and Medical School",
+        "All rooms are ensuite with modern facilities"
+      ],
+      "cons": [
+        "More expensive than some other on-campus options",
+        "Limited parking availability",
+        "Shared reception with Cappavilla Village (can be busy)"
+      ],
+      "pricing": "4-Bed Apartment: ~€7,635; 2-Bed Apartment: ~€8,044 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Quigley_Exterior.jpg",
+        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Quigley_Living_Room.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=F5t8h8j7A_M",
+        "https://www.youtube.com/watch?v=FeJYryzD899"
+      ],
+      "phone": "+353 61 237500",
+      "email": "cappavillavillage@ul.ie"
+    },
+    {
+      "name": "Drominbeg Square (Rhebogue Student Village)",
+      "location": "Off-Campus",
+      "description": "UL's newest off-campus village, located in the Rhebogue area approximately 3km from the main campus. Specifically catering to postgraduate students on 51-week contracts, it offers a mix of ensuite and non-ensuite rooms in 3, 4, and 6-bedroom houses. It is connected to the university via the Canal Bank river path, suitable for cycling or walking.",
+      "roomTypes": [
+        "3-bedroom house (Ensuite & Standard)",
+        "4-bedroom house (Ensuite & Standard)",
+        "6-bedroom house (Ensuite & Standard)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "In-house washer and dryer",
+        "Gas-fired central heating",
+        "Bike storage",
+        "Regular security patrols",
+        "Refuse collection",
+        "Full access to UL Sport gym & pool"
+      ],
+      "pros": [
+        "51-week contract option ideal for Masters/PhD students",
+        "Quiet residential location away from the bustle of undergrad nightlife",
+        "Newer facilities with in-house laundry"
+      ],
+      "cons": [
+        "Located 3km from campus (further than other villages)",
+        "Requires commuting (bike/bus/walk)",
+        "Limited parking available"
+      ],
+      "pricing": "Ensuite: ~€9,889; Standard: ~€9,111 (51 Weeks, Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Drominbeg_Exterior.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=HXyiGKvdQ66"
+      ],
+      "phone": "+353 61 202977",
+      "email": "accommodation@ul.ie"
+    },
+    {
+      "name": "Cappavilla Village",
+      "location": "On-Campus",
+      "description": "Located on the North Campus at the highest point, offering stunning views of the River Shannon and surrounding counties. It is an apartment-style residence popular with health science and music students due to its proximity to those buildings. While mixed, it often houses many postgraduates in specific blocks.",
+      "roomTypes": [
+        "6-bedroom apartment (Ensuite)",
+        "4-bedroom apartment (Ensuite)",
+        "2-bedroom apartment (Ensuite)"
+      ],
+      "amenities": [
+        "All rooms ensuite",
+        "High-speed WiFi",
+        "Common room with pool table",
+        "Launderette",
+        "Bike storage",
+        "Full access to UL Sport gym & pool"
+      ],
+      "pros": [
+        "All bedrooms have private ensuite bathrooms",
+        "Scenic views and quiet atmosphere on North Campus",
+        "Close to Irish World Academy and Health Sciences building"
+      ],
+      "cons": [
+        "15-20 minute walk to the main campus/library via the Living Bridge",
+        "Can feel isolated from the main social hubs",
+        "Electric heating can be expensive if usage limits exceeded (though utilities generally included)"
+      ],
+      "pricing": "6-Bed: ~€7,226; 4-Bed: ~€7,486; 2-Bed: ~€7,905 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Cappavilla_Exterior.jpg",
+        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Cappavilla_Kitchen.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=XJflUW2EJeJ",
+        "https://www.youtube.com/watch?v=QPyKbq3ouUw"
+      ],
+      "phone": "+353 61 237500",
+      "email": "cappavillavillage@ul.ie"
+    },
+    {
+      "name": "Thomond Village",
+      "location": "On-Campus",
+      "description": "Situated on the North Campus, linked to the south bank by the spectacular Living Bridge. It offers spectacular views of the River Shannon. The village consists of apartment-style accommodation and shares a reception and study hub. It is a large village that houses a mix of students but has dedicated postgraduate apartments.",
+      "roomTypes": [
+        "6-bedroom apartment (Ensuite)",
+        "4-bedroom apartment (Ensuite)",
+        "2-bedroom apartment (Ensuite)"
+      ],
+      "amenities": [
+        "All rooms ensuite",
+        "High-speed WiFi",
+        "Study hub",
+        "Launderette",
+        "Bike storage",
+        "Full access to UL Sport gym & pool"
+      ],
+      "pros": [
+        "Modern apartment style with ensuite rooms",
+        "Beautiful riverside location and views",
+        "Access to a dedicated study hub"
+      ],
+      "cons": [
+        "Walking distance to main campus classes (10-15 mins)",
+        "Windy crossing the bridge in winter",
+        "Large village can be noisy depending on block allocation"
+      ],
+      "pricing": "6-Bed: ~€7,226; 4-Bed: ~€7,486; 2-Bed: ~€7,905 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Thomond_Exterior.jpg",
+        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Thomond_Room.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=7XxuRQnP0vg",
+        "https://www.youtube.com/watch?v=GDvJRbfOS6"
+      ],
+      "phone": "+353 61 237000",
+      "email": "thomondvillage@ul.ie"
+    },
+    {
+      "name": "Dromroe Village",
+      "location": "On-Campus",
+      "description": "An attractive apartment-style complex bordering the millstream and overlooking the Shannon River. It is located very centrally on the main campus, close to the main teaching buildings and the University Concert Hall. It has a village feel with an on-site pizza place and shop.",
+      "roomTypes": [
+        "6-bedroom apartment (Ensuite)",
+        "2-bedroom apartment (Ensuite)"
+      ],
+      "amenities": [
+        "All rooms ensuite",
+        "Village hall with seminar rooms",
+        "On-site convenience store and pizzeria",
+        "Launderette",
+        "High-speed WiFi",
+        "Full access to UL Sport gym & pool"
+      ],
+      "pros": [
+        "Central on-campus location, very short walk to classes",
+        "Ensuite bathrooms in all rooms",
+        "Excellent on-site facilities (shop, food, seminar rooms)"
+      ],
+      "cons": [
+        "Can be noisy due to central location and on-site retail",
+        "Parking is limited and not guaranteed",
+        "High demand makes it difficult to secure a room"
+      ],
+      "pricing": "6-Bed: ~€7,164; 2-Bed: ~€7,764 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Dromroe_Exterior.jpg",
+        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Dromroe_Kitchen.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=sapCRxItRhh",
+        "https://www.youtube.com/watch?v=GgngmNA7W46"
+      ],
+      "phone": "+353 61 202977",
+      "email": "dromroevillage@ul.ie"
+    },
+    {
+      "name": "Troy Village",
+      "location": "Off-Campus",
+      "description": "Located in the Groody area of Castletroy, approximately a 15-minute walk from the main UL campus. Managed by UL Campus Life Services, it offers a secure, gated community feel. It is a popular choice for students who want a slightly cheaper option while remaining under university management.",
+      "roomTypes": [
+        "3/4/5/6/7-bedroom apartments (Ensuite)",
+        "3/4/5/6/7-bedroom apartments (Standard/Shared Bathroom)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "Gated access with CCTV",
+        "On-site launderette",
+        "Refuse collection",
+        "Full access to UL Sport gym & pool",
+        "Shuttle bus service nearby"
+      ],
+      "pros": [
+        "More affordable than on-campus ensuite villages",
+        "Shops and supermarkets (Groody Centre) nearby",
+        "Quiet, gated community safe for residents"
+      ],
+      "cons": [
+        "15-20 minute walk to campus (not immediate access)",
+        "Some rooms have shared bathrooms (Standard options)",
+        "Limited parking availability"
+      ],
+      "pricing": "Ensuite: ~€5,793 - €6,116; Standard: ~€5,159 - €5,838 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Troy_Village_Exterior.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=JPM_3lLztB8"
+      ],
+      "phone": "+353 61 330199",
+      "email": "troyvillage@ul.ie"
+    },
+    {
+      "name": "Groody Village (UL Managed)",
+      "location": "Off-Campus",
+      "description": "Located in the Groody area, close to Troy Village and about 15 minutes walk from campus. UL Campus Life Services manages specific blocks within this development. It offers modern apartment living with a mix of ensuite and standard rooms. Residents here have access to the same support network as other UL managed villages.",
+      "roomTypes": [
+        "6-bedroom apartment (Ensuite)",
+        "3-bedroom apartment (Standard/Shared Bathroom)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "Washer/dryer in apartment",
+        "Gas central heating",
+        "Full access to UL Sport gym & pool",
+        "Refuse collection",
+        "Gated entry"
+      ],
+      "pros": [
+        "Close to supermarkets and local amenities",
+        "Includes UL Sport membership and campus support",
+        "Modern fittings with in-unit laundry"
+      ],
+      "cons": [
+        "15-minute walk to campus",
+        "Standard rooms share bathrooms",
+        "Not directly on the main campus shuttle route (though close)"
+      ],
+      "pricing": "6-Bed Ensuite: ~€6,152; 3-Bed Standard: ~€6,050 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Groody_Village_Exterior.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=BoxG0bl5qMU"
+      ],
+      "phone": "+353 61 330199",
+      "email": "groodyvillage@ul.ie"
+    },
+    {
+      "name": "Groody Student Park (Private)",
+      "location": "Off-Campus",
+      "description": "A privately managed student accommodation complex located in the Castletroy area, adjacent to the UL-managed Groody Village. It is very popular with postgraduates and international students. The complex features 3-bedroom apartments and 6-bedroom duplexes within a secure gated community.",
+      "roomTypes": [
+        "3-bedroom apartment (Double bed, Shared bathroom)",
+        "6-bedroom duplex (Ensuite)"
+      ],
+      "amenities": [
+        "High-speed broadband",
+        "Multi-channel TV",
+        "Fully fitted kitchens with washer/dryer",
+        "Secure gated entry",
+        "Free parking (subject to availability)"
+      ],
+      "pros": [
+        "Private management allows for different booking flexibility",
+        "Spacious living areas with double beds in many rooms",
+        "Walking distance to ALDI, SuperValu, and cinema"
+      ],
+      "cons": [
+        "Utilities often charged separately or as a prepaid allowance",
+        "Booking process is separate from the central UL lottery",
+        "15-20 minute walk to UL main building"
+      ],
+      "pricing": "Rent: ~€4,768 + €1,000 Utility Deposit (Total ~€5,800)",
+      "bookingURL": "https://groodystudentpark.ie/apply-online/",
+      "imageURLs": [
+        "https://groodystudentpark.ie/wp-content/uploads/2014/05/slide-1-1500x630.jpg",
+        "https://groodystudentpark.ie/wp-content/uploads/2014/05/slide-2-1500x630.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=BoxG0bl5qMU"
+      ],
+      "phone": "+353 61 350100",
+      "email": "info@groodystudentpark.ie"
+    },
+    {
+      "name": "Brookfield Hall",
+      "location": "Off-Campus",
+      "description": "A purpose-built private student complex located on the Groody Road. It is well-regarded for its high-quality facilities and includes a shuttle bus service to UL. It offers spacious apartments with all ensuite bedrooms and double beds, making it a premium choice for postgraduates.",
+      "roomTypes": [
+        "2, 3, 4-bedroom apartments (All Ensuite, Double/Single beds)"
+      ],
+      "amenities": [
+        "Free shuttle bus to UL",
+        "High-speed WiFi",
+        "Multi-channel TV",
+        "24/7 Security",
+        "On-site launderette",
+        "Gym/Games room"
+      ],
+      "pros": [
+        "Free shuttle bus service is a major convenience",
+        "All rooms are ensuite with double bed options",
+        "Dedicated block often available for postgraduates"
+      ],
+      "cons": [
+        "Slightly more expensive than some other off-campus options",
+        "Strict cancellation policies",
+        "High demand leads to early sell-out"
+      ],
+      "pricing": "Single: ~€4,966 + €1,000 Utilities; Double: ~€5,187 + €1,000 Utilities",
+      "bookingURL": "https://www.brookfieldhall.com/rates-booking-dates/",
+      "imageURLs": [
+        "https://www.brookfieldhall.com/wp-content/uploads/2023/04/brookfield-hall-student-accommodation-limerick-1.jpg",
+        "https://www.brookfieldhall.com/wp-content/uploads/2023/04/brookfield-hall-living-room.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=FCtxx9PO-ry"
+      ],
+      "phone": "+353 61 333888",
+      "email": "info@brookfieldhall.com"
+    },
+    {
+      "name": "Plassey Village",
+      "location": "On-Campus",
+      "description": "One of the original on-campus villages, consisting of terraced houses arranged around courtyards. While typically popular with first-year undergraduates due to its social atmosphere, it offers an affordable on-campus option. Accommodations are generally 8-bedroom houses with shared bathrooms.",
+      "roomTypes": [
+        "8-bedroom house (Shared bathrooms)",
+        "4-bedroom house (Shared bathrooms)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "Shared bathrooms (2 showers/toilets per 8-bed house)",
+        "Full kitchen/living area",
+        "Launderette",
+        "Full access to UL Sport gym & pool"
+      ],
+      "pros": [
+        "Most affordable on-campus option",
+        "Located very close to the main university entrance and bus stops",
+        "Strong community feel"
+      ],
+      "cons": [
+        "Predominantly undergraduate/fresher population (can be noisy)",
+        "Shared bathrooms (no ensuite)",
+        "Older housing stock compared to Cappavilla/Thomond"
+      ],
+      "pricing": "8-Bed: ~€5,416; 4-Bed: ~€6,116 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Plassey_Village_Exterior.jpg",
+        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Plassey_Kitchen.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=F5WItaqdYx2"
+      ],
+      "phone": "+353 61 202347",
+      "email": "plasseyvillage@ul.ie"
+    },
+    {
+      "name": "Kilmurry Village",
+      "location": "On-Campus",
+      "description": "Located near the UL Sport Arena, this village consists of terraced houses in a landscaped setting. It is ideal for sports enthusiasts. Like Plassey, it has a strong undergraduate presence but offers 6 and 8-bedroom houses. It is close to the running track and swimming pool.",
+      "roomTypes": [
+        "6-bedroom house (Shared bathrooms)",
+        "8-bedroom house (Shared bathrooms)"
+      ],
+      "amenities": [
+        "High-speed WiFi",
+        "Shared bathrooms",
+        "Bike storage",
+        "Launderette",
+        "Adjacent to UL Sports Arena"
+      ],
+      "pros": [
+        "Immediate access to world-class sports facilities",
+        "Good balance of cost and location",
+        "Spacious kitchen/living areas"
+      ],
+      "cons": [
+        "Shared bathrooms (no ensuite)",
+        "Can be noisy with undergraduate students",
+        "Slightly further from main reception than Plassey"
+      ],
+      "pricing": "8-Bed: ~€6,108; 6-Bed: ~€6,579 (Utilities included)",
+      "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+      "imageURLs": [
+        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Kilmurry_Exterior.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=c_hpqSHPn7w"
+      ],
+      "phone": "+353 61 202331",
+      "email": "kilmurryvillage@ul.ie"
+    },
+    {
+      "name": "Parkview Hall",
+      "location": "Off-Campus",
+      "description": "A purpose-built student apartment complex located on the Dublin Road, roughly a 25-30 minute walk from the university. It offers budget-friendly accommodation in 3-bedroom apartments. It is a quieter option often chosen by students who miss out on closer villages or want to save money.",
+      "roomTypes": [
+        "3-bedroom apartment (Shared bathroom)"
+      ],
+      "amenities": [
+        "WiFi included",
+        "Gated complex",
+        "On-site laundry",
+        "Parking",
+        "Balcony in apartments"
+      ],
+      "pros": [
+        "More affordable monthly rent compared to villages",
+        "Near local bus stops for city and university access",
+        "Quieter than the main student hubs"
+      ],
+      "cons": [
+        "Longer walk to campus (25-30 mins)",
+        "Electricity is often pre-pay (Pinergy) and extra",
+        "Facilities are more basic than luxury student builds"
+      ],
+      "pricing": "Approx. €4,050 for academic year (€450/month) + Utilities",
+      "bookingURL": "http://www.parkviewhallstudents.com",
+      "imageURLs": [
+        "http://www.parkviewhallstudents.com/uploads/2/6/4/3/26432160/1393366874.jpg"
+      ],
+      "videoURLs": [
+        "https://www.youtube.com/watch?v=Exqo9-tAJrf"
+      ],
+      "phone": "",
+      "email": "parkviewhallstudents@outlook.com"
+    }
+  ],
+  "sources": [
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFU9KI-nGdK50CgdoQQ5nLgViZZk9FphQbeTJXKX4VIHJ_qHz9hvtWEMZsM9dssFg0gCEPsXt_Jp3Q2E8EdpeSFDptWhYaq27gVnNl7uCDhNbgo87-yq5qol5Pu5rQC06OFpQEsp5tZQbnDb4PGAsxVyVftXWd1wUWdeiOVyFM=",
+      "title": "studentcrowd.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdzQm_x-DAwnUSIdv8vas86sn7iUtFQKLBuen8Rwz8UCqsw31caR0sH78tUz1JVwztyUaY3ZAmJzqwfFUqz0Cr3gBAAcjYOqgJ_hIoNoIy1sIzRjD1f5PTwFf744KAGNkQzuSr0r0mVJQ3ag==",
+      "title": "ul.ie"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFG-D5zxzqxRqx3UrnFn5CDC5YvqO3nKvHXouIzgDGRp-AfJ5DMaHnqKiPx5IIp4nzbNXriDm7KFviL9YR3CfcLT_be6pVHX-2BS-5bjAVQXAUxaYDHDyZyGMBYVgYdsbSqH1BsbNGfLzfX",
+      "title": "ul.ie"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvGjCIoaiUNZNY4a8R-QPz-_bjkWR1YRNcZ2ZsxdSSzOdktlVOc74xjtAnLgfIW10pnlgnIerHot6JwuegsNesZ9SiUY8_1WwQMRfPU7yjWaKG5VegSVUbCsaDGG1KnrsPZ-GHln3a25OaGI3Z1E9zet6Lx6aLH45iIOOIBzlWMEsBqBBZhAA=",
+      "title": "booking.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXJQM8G9YCUHHf9oVe_MYwml0xrxg2ZUqGgqpIe5_6j8AxecQRukckju75XXBbSAebeLAM4yYTbN83QFTjFYLijJuCCiC-eN2nf48J4Vc4AaVEWXfeKIRQGN9PZWXGfTlHov2y0r2o6zRaHRQK515YGqn-ItOaaq_QkwhqS3f4U-FkoM8SW-zjiBr1ns6hW30CKKtIDpJHYml-C5N1",
+      "title": "reading.ac.uk"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsT-DHBUOepM5H-DRKL8edS35l0QsQ-RkcE0eLjproGFbf86B3HmyhxMthQfhXtYFXrAKa7vGElK10CclwqNtgK3zx_Je60Oq5H8yjAh0NIbHBnCU00QMwPQQ0K2nwT7R0RfYrIiTXPRAsCHSRdmbk7yG7XHfLkUSKi56D67p9GSKCD48oUPY0kHl6aQ==",
+      "title": "college-contact.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN9-YysZgex_lbV1EhwASqMQjq3x84D9728W-ol14dgG3dELPl7gBDxpXcvhC8L6xWH9Nd_Win9TJMbxRXrHmDCZgKyvXuLuLu29T6kTqPzHYy7AGg8U7gVZrjo22d1MdR6nrU1NNkoTVq-A1nGANVaqGDIPGM3Mqs_LTrFico_hRSkwTu",
+      "title": "ul.ie"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG58JsCB6exbqJDGVe0JIQGKazue1CpiYypz8AHm9HVzR2SkKIPUSWGY96W--zKI7lZQpqDtHjng5OlmGoI7o_LDRlBO9hHgho4l3Ds-fdPjbhAe__7BQyEdu25RkC_jA==",
+      "title": "parkviewhallstudents.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXzZw8eqorBJvgSm7JpccVik32GAD0Logt4M4VOMeCukaFcxGFc5zxjooMmK4X9BUGYTq_6jQIVMkCrJWZvwcDXC8oCjEeOblLgCfF4GhKTiIdnxjIiOLYiG4NtG_Vt64=",
+      "title": "parkviewhallstudents.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-f5up7YvMxYGAZMEJuBinKVtwCTZQ-57uCaxTzWyfba6XY9fLKJMRu-UcwT8B4Jxb7-LDeGLK5_6B_LCyB5Lu4bM9Ti6jXvfy5G035GOkbkmu_tq7QFlq2nzDJnO-55UdJXeVysDhBBPOCZRedLPgwbHe98nxQ0oV7FW00Qt0RQ==",
+      "title": "ul.ie"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAHYwvf3gYmlbKzDgLKoV3DqpcLY8mYAePvoPkJ99EovBUbZO2TYBlpNKpnvNYqK4n2FtNqp5t7TG6OoO3LQc65LzTBwcZLhWtawgvV4AeT5S7g2ylYn9_Uzkrbv9b0Fc=",
+      "title": "parkviewhallstudents.com"
+    }
+  ]
+}
