@@ -57,8 +57,3 @@ Built with **Vite** and **React** for lightning-fast performance.
 
 4.  Open `http://localhost:5173` in your browser.
 
----
-
-## License
-
-© 2026 jepixo. All rights reserved.
