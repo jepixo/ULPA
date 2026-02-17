@@ -5,6 +5,7 @@ import AccommodationFilters from './AccommodationFilters';
 import AccommodationCard from './AccommodationCard';
 import AdviceAccordion from './AdviceAccordion';
 import ScenarioPlanner from './ScenarioPlanner';
+import PortalPreview from './PortalPreview';
 import { ACCOMMODATIONS } from '../data/accommodations';
 import type { Accommodation, FilterState, SortOption } from '../types';
 
@@ -108,6 +109,12 @@ const HomePage: React.FC = () => {
                         >
                             Your 3 Paths
                         </button>
+                        <button
+                            onClick={() => scrollTo('portal-preview')}
+                            className="bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-xl text-base border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98] w-full sm:w-auto"
+                        >
+                            Portal Preview
+                        </button>
                     </div>
 
                     {/* Quick Stats */}
@@ -189,6 +196,9 @@ const HomePage: React.FC = () => {
 
             {/* ── Section 5: Scenarios & Strategy ── */}
             <ScenarioPlanner />
+
+            {/* ── Section 6: Portal Preview ── */}
+            <PortalPreview />
 
             {/* ── Footer ── */}
             <footer className="text-center py-10 text-sm text-gray-400 border-t border-gray-100 bg-white">
