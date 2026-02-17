@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
 
                 <div className="relative container mx-auto px-4 py-20 md:py-28 max-w-5xl text-center">
                     <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary bg-primary/20 px-4 py-1.5 rounded-full mb-6 animate-fadeIn">
-                        2025 / 2026 Guide
+                        2026 / 2027 Guide
                     </span>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight animate-fadeIn">
                         Postgraduate Accommodation<br />
