@@ -31,8 +31,7 @@
       "pricing": "4-Bed Apartment: ~€7,635; 2-Bed Apartment: ~€8,044 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Quigley_Exterior.jpg",
-        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Quigley_Living_Room.jpg"
+        "/ULPA/images/apartment.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=F5t8h8j7A_M",
@@ -72,7 +71,7 @@
       "pricing": "Ensuite: ~€9,889; Standard: ~€9,111 (51 Weeks, Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Drominbeg_Exterior.jpg"
+        "/ULPA/images/village.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=HXyiGKvdQ66"
@@ -110,8 +109,7 @@
       "pricing": "6-Bed: ~€7,226; 4-Bed: ~€7,486; 2-Bed: ~€7,905 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Cappavilla_Exterior.jpg",
-        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Cappavilla_Kitchen.jpg"
+        "/ULPA/images/apartment.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=XJflUW2EJeJ",
@@ -150,8 +148,7 @@
       "pricing": "6-Bed: ~€7,226; 4-Bed: ~€7,486; 2-Bed: ~€7,905 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Thomond_Exterior.jpg",
-        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Thomond_Room.jpg"
+        "/ULPA/images/village.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=7XxuRQnP0vg",
@@ -189,8 +186,7 @@
       "pricing": "6-Bed: ~€7,164; 2-Bed: ~€7,764 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Dromroe_Exterior.jpg",
-        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Dromroe_Kitchen.jpg"
+        "/ULPA/images/apartment.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=sapCRxItRhh",
@@ -228,7 +224,7 @@
       "pricing": "Ensuite: ~€5,793 - €6,116; Standard: ~€5,159 - €5,838 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Troy_Village_Exterior.jpg"
+        "/ULPA/images/residence.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=JPM_3lLztB8"
@@ -265,7 +261,7 @@
       "pricing": "6-Bed Ensuite: ~€6,152; 3-Bed Standard: ~€6,050 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Groody_Village_Exterior.jpg"
+        "/ULPA/images/residence.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=BoxG0bl5qMU"
@@ -301,8 +297,7 @@
       "pricing": "Rent: ~€4,768 + €1,000 Utility Deposit (Total ~€5,800)",
       "bookingURL": "https://groodystudentpark.ie/apply-online/",
       "imageURLs": [
-        "https://groodystudentpark.ie/wp-content/uploads/2014/05/slide-1-1500x630.jpg",
-        "https://groodystudentpark.ie/wp-content/uploads/2014/05/slide-2-1500x630.jpg"
+        "/ULPA/images/groody_park.jpg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=BoxG0bl5qMU"
@@ -338,8 +333,7 @@
       "pricing": "Single: ~€4,966 + €1,000 Utilities; Double: ~€5,187 + €1,000 Utilities",
       "bookingURL": "https://www.brookfieldhall.com/rates-booking-dates/",
       "imageURLs": [
-        "https://www.brookfieldhall.com/wp-content/uploads/2023/04/brookfield-hall-student-accommodation-limerick-1.jpg",
-        "https://www.brookfieldhall.com/wp-content/uploads/2023/04/brookfield-hall-living-room.jpg"
+        "/ULPA/images/brookfield.jpg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=FCtxx9PO-ry"
@@ -375,8 +369,7 @@
       "pricing": "8-Bed: ~€5,416; 4-Bed: ~€6,116 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Plassey_Village_Exterior.jpg",
-        "https://www.ul.ie/sites/default/files/styles/media_image/public/media/images/Plassey_Kitchen.jpg"
+        "/ULPA/images/village.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=F5WItaqdYx2"
@@ -412,7 +405,7 @@
       "pricing": "8-Bed: ~€6,108; 6-Bed: ~€6,579 (Utilities included)",
       "bookingURL": "https://studentliving.ul.ie/index.jsp?p=119&n=144",
       "imageURLs": [
-        "https://www.ul.ie/sites/default/files/styles/hero_image/public/media/images/Kilmurry_Exterior.jpg"
+        "/ULPA/images/village.svg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=c_hpqSHPn7w"
@@ -447,7 +440,7 @@
       "pricing": "Approx. €4,050 for academic year (€450/month) + Utilities",
       "bookingURL": "http://www.parkviewhallstudents.com",
       "imageURLs": [
-        "http://www.parkviewhallstudents.com/uploads/2/6/4/3/26432160/1393366874.jpg"
+        "/ULPA/images/parkview.jpg"
       ],
       "videoURLs": [
         "https://www.youtube.com/watch?v=Exqo9-tAJrf"

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    .maintenance-page {
+      font-family: arial, helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #fff;
+    }
+
+    .maintenance-page__wrapper {
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .maintenance-page__header {
+      color: #005335;
+    }
+
+    .maintenance-page--branding-logo img {
+      width: 320px;
+      max-width: 100%;
+    }
+  </style>
+
+  <title>404 Page not found | University of Limerick</title>
+<script async="true" data-browser-key="df08da5e74b1c14f3cdc1a75bcba790b6a35130879e713e54bbd6a18b1710b4f" data-sample-rate="0.300000" data-parent-trace-id="6a3780c527c24eae12b758262d4c3068" data-transaction-name="" data-collector="https://ingest.upsun-eu-4.observability-pipeline.blackfire.io" src="https://admin-pipeline.upsun-eu-4.observability-pipeline.blackfire.io/js/probe.js"></script></head>
+
+<body class="maintenance-page path-frontpage page-node-type-homepage">
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="maintenance-page padding-top padding-bottom padding-horizontal">
+      <div
+        class="maintenance-page__wrapper layout-contained layout-contained--large">
+        <header class="maintenance-page__header">
+          <div class="maintenance-page--branding-logo">
+            <a href="/" rel="home">
+              <img src="/themes/custom/ul/logo.svg"
+                alt="University of Limerick logo">
+            </a>
+          </div>
+
+          <div class="maintenance-page__name-and-slogan">
+            <h1 class="maintenance-page__site-name">
+              404: Page Not Found
+            </h1>
+          </div>
+        </header>
+
+        <div class="maintenance-page__content">
+          <p>The requested page could not be found on the website.</p>
+          <p>Please <a href="/">return to the home page</a> and try again.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

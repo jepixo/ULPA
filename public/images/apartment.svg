@@ -1,0 +1,13 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="800" height="600" fill="url(#grad2)" />
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Outfit', sans-serif"
+        font-size="48" fill="white" font-weight="bold">Riverside Apartments</text>
+    <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-family="'Outfit', sans-serif"
+        font-size="24" fill="rgba(255,255,255,0.8)">Premium Student Living</text>
+</svg>
