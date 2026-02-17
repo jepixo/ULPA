@@ -76,20 +76,14 @@ export const ADVICE_CONTENT: AdviceItem[] = [
     {
         id: "deposit",
         title: "Deposit & Payment Structure",
-        content: "UL requires a €500 booking deposit when you accept your accommodation offer. This is held as security against damages or unpaid rent. For private accommodations, deposits vary — Groody Student Park charges a €1,000 utility deposit (refundable if within your allowance). Always request receipts for all payments. Your deposit does NOT cover rent during your notice period.",
+        content: "UL requires a **€500 booking deposit** when you accept your accommodation offer. This is held as security against damages or unpaid rent. **Important:** If you accept an offer and pay the deposit, cancelling later would mean you do **NOT** get a refund of the €500. Additionally, the first installment of your rent would typically need to be paid before **28th July 2026**. For private accommodations, deposits vary — Groody Student Park charges a €1,000 utility deposit. Always request receipts for all payments and note that your deposit does NOT cover rent during your notice period. Read all the Terms and Conditions before making any payments.",
         icon: "💰",
     },
     {
         id: "ensuite",
         title: "Shared vs Ensuite Rooms",
-        content: "Ensuite rooms have a private bathroom in your bedroom. Standard/shared rooms mean you share a bathroom with 2–4 other housemates. Ensuite rooms cost significantly more (often €1,000–€2,000 extra per year). Villages like Plassey and Kilmurry only offer shared bathrooms. Cappavilla, Thomond, Quigley, and Dromroe are fully ensuite. Consider your priorities — privacy vs budget.",
+        content: "Ensuite rooms have a private bathroom in your bedroom. Standard/shared rooms mean you share a bathroom with 2–4 other housemates. Ensuite rooms cost significantly more (often €400 – €800 extra per year). Villages like Plassey and Kilmurry only offer shared bathrooms. Cappavilla, Thomond, Quigley, and Dromroe are fully ensuite. Consider your priorities — privacy vs budget.",
         icon: "🚿",
-    },
-    {
-        id: "managed",
-        title: "UL Managed vs Private Accommodation",
-        content: "UL-managed properties (Quigley, Cappavilla, Thomond, Dromroe, Plassey, Kilmurry, Troy, Groody UL, Drominbeg) are all booked through the central UL Accommodation Portal. You cannot book a specific apartment — you rank preferences. Private properties (Brookfield Hall, Groody Student Park, Parkview Hall) let you book directly with the landlord. You can often choose your specific room and do group bookings with friends.",
-        icon: "🏢",
     },
     {
         id: "strategy",

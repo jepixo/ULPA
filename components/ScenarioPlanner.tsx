@@ -47,17 +47,20 @@ const SCENARIOS: ScenarioData[] = [
         color: 'from-green-500 to-emerald-600',
         colorLight: 'bg-green-50 border-green-200',
         badge: '💚 Simplest',
-        costRange: '€7,300 – €9,600',
+        costRange: '€7,400 – €10,000',
         gettability: 'Low–Moderate',
         gettabilityPercent: '15% – 40%',
         gettabilityColor: 'text-orange-500 bg-orange-50',
         details: [
-            { label: 'Thomond / Cappavilla (ensuite)', value: '€9,100 → €9,600' },
-            { label: 'Troy (ensuite or standard)', value: '€7,300 → €7,700' },
+            { label: 'Drominbeg Square (ensuite)', value: '€10,019' },
+            { label: 'Thomond / Cappavilla (ensuite)', value: '€9,267 → €9,558' },
+            { label: 'Drominbeg Square (standard)', value: '€8,332' },
+            { label: 'Troy (ensuite)', value: '€7,767' },
+            { label: 'Troy (standard)', value: '€7,472' },
         ],
         upside: 'Single move, guaranteed campus management, utilities & UL Sport included.',
-        downside: 'High price; low chance to secure your ideal village if inventory is limited.',
-        reasoning: 'UL posts show only a limited number of 51-week postgraduate rooms and demand is high. PhD / medical / returning postgrads often get priority.',
+        downside: 'Highest overall price; inventory is extremely limited (e.g. only 8 rooms listed for Drominbeg on site), making it very tough to secure your top preference.',
+        reasoning: 'UL portal data shows prices up to €10k for 51-week stays. Demand is exceptionally high and PhD / medical students often get priority.',
     },
     {
         id: 'B',
@@ -102,7 +105,7 @@ const SCENARIOS: ScenarioData[] = [
 ];
 
 const COST_COMPARISONS: CostComparison[] = [
-    { scenario: '51-week (31st Aug 2026 to 23rd Aug 2027)', range: '€9,100 – €9,600', source: 'UL Fees Page' },
+    { scenario: '51-week (31st Aug 2026 to 23rd Aug 2027)', range: '€7,472 – €10,019', source: 'UL Portal 2026/27' },
     { scenario: 'Full Acad. Year + UL summer extension', range: '€7,200 – €9,200', source: 'UL Published Rates' },
     { scenario: 'Full Acad. Year + private summer (mid tier)', range: '~€7,900', source: 'Daft.ie + UL Fees' },
 ];
@@ -116,27 +119,27 @@ const PROBABILITY_ROWS: ProbabilityRow[] = [
 const STEPS: RecommendationStep[] = [
     {
         step: 1,
-        title: 'Apply for Full Academic Year now',
-        description: 'Prioritize on-campus ensuite villages (Thomond, Cappavilla, Dromroe) in your rank list. This locks a good campus environment for the academic year and avoids accepting a Troy 51-week by accident.',
-        timing: 'Now',
+        title: 'Apply for 51-Week Contract first',
+        description: 'If you want the convenience of staying in one room until August 2027, put 51-week contract villages (Cappavilla, Thomond, Drominbeg, Troy) at the top of your preference list.',
+        timing: 'Now (Portal Open)',
     },
     {
         step: 2,
-        title: 'Prepare summer backup (parallel search)',
-        description: 'Email accommodation@ul.ie and summer.reservations@ul.ie to register interest in extension and ask for current procedure + estimated rates. Simultaneously start watching Daft.ie sharing and Facebook student groups for mid-tier ensuite rooms.',
-        timing: 'Now → Late March',
+        title: 'Rank Full Acad. Year as Backup',
+        description: 'If 51-week inventory is full or assignments are not ensuite, ensured you have ranked high-quality Full Academic Year villages (Dromroe, Quigley) as your next preferences to secure on-campus housing.',
+        timing: 'Now (Portal Open)',
     },
     {
         step: 3,
-        title: 'Evaluate UL extension offer',
-        description: 'If UL confirms extension at ≤ ~€200/week, accept it (total cost will likely stay ≤ 51-week UL price). If UL can\'t offer or wants a high premium, go private summer sublet.',
+        title: 'Prepare summer backup (parallel search)',
+        description: 'If you end up with a Full Academic Year licence, start the parallel search for a summer extension or private summer sublet around March to ensure you have housing through August 2027.',
         timing: 'March → April',
     },
     {
         step: 4,
-        title: 'Plan beyond August 2027',
-        description: 'If staying after August 2027 (job/visa), plan to move to private full-year housing in August. UL will not guarantee housing past late August.',
-        timing: 'If applicable',
+        title: 'Finalize Summer Stay',
+        description: 'Confirm your summer extension with UL or secure a private ensuite sublet. Total costs for this "split" path are often similar to or lower than a flat 51-week fee.',
+        timing: 'April → May',
     },
 ];
 
@@ -329,7 +332,7 @@ const ScenarioPlanner: React.FC = () => {
                     <div className="text-center mb-8">
                         <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary bg-primary/20 px-4 py-1.5 rounded-full mb-4">Evidence-Backed</span>
                         <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">Recommended Action Plan</h3>
-                        <p className="text-gray-500 max-w-2xl mx-auto">You want campus proximity, ensuite, and absolutely NOT Troy long-term. Given your finish date 19 May 2027:</p>
+                        <p className="text-gray-500 max-w-2xl mx-auto">You want campus proximity and a guaranteed ensuite room. Given your finish date 19 May 2027:</p>
                     </div>
 
                     <div className="space-y-4 max-w-3xl mx-auto">
@@ -385,12 +388,12 @@ const ScenarioPlanner: React.FC = () => {
                     <h3 className="font-bold text-xl mb-4 flex items-center gap-2">⚖️ Final Calibrated Verdict</h3>
                     <div className="space-y-4">
                         <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-                            <p className="font-bold text-primary mb-1">If your top priority is: avoid Troy / guaranteed ensuite / campus proximity during term</p>
+                            <p className="font-bold text-primary mb-1">If your top priority is: guaranteed ensuite / campus proximity during term</p>
                             <p className="text-gray-300 text-sm leading-relaxed">Choose the <strong>Full Academic Year now</strong> and run parallel extension + private summer searches. That gives you <strong>high quality during the academic year</strong> and a <strong>70%+ probability</strong> of a reasonable summer option if you search in April.</p>
                         </div>
                         <div className="bg-white/5 border border-white/10 rounded-xl p-5">
                             <p className="font-bold text-amber-400 mb-1">If your top priority is: one-move-only convenience</p>
-                            <p className="text-gray-300 text-sm leading-relaxed">Apply for <strong>51-week</strong> and hope for the best — cost likely <strong>€7k–€9k</strong> depending on village. Accept the risk of ending up in Troy or a standard (non-ensuite) 51-week room.</p>
+                            <p className="text-gray-300 text-sm leading-relaxed">Apply for <strong>51-week</strong> and hope for the best — cost likely <strong>€7k–€10k</strong> depending on village. Accept the specific village assignment and room type provided by UL.</p>
                         </div>
                     </div>
                 </div>

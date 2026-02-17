@@ -191,9 +191,15 @@ const HomePage: React.FC = () => {
             <ScenarioPlanner />
 
             {/* ── Footer ── */}
-            <footer className="text-center py-8 text-sm text-gray-400 border-t border-gray-100 bg-white">
-                <p>© 2026 UL Postgraduate Accommodation Guide. Unofficial Research Tool.</p>
-                <p className="mt-1 text-xs text-gray-300">Data sourced from UL official publications and verified research. Not affiliated with University of Limerick.</p>
+            <footer className="text-center py-10 text-sm text-gray-400 border-t border-gray-100 bg-white">
+                <p className="font-medium text-gray-500 mb-1">Built by <span className="text-primary">jepixo</span></p>
+                <p>UL Postgraduate Accommodation Guide. Unofficial Research Tool.</p>
+                <div className="mt-4 max-w-2xl mx-auto px-4">
+                    <p className="text-xs text-gray-300 leading-relaxed">
+                        Data and media are sourced from various internet platforms and official University publications.
+                        Ownership of all content belongs to the original creators and respective entities.
+                    </p>
+                </div>
             </footer>
         </div>
     );

@@ -16,10 +16,8 @@ const AllocationVisualizer: React.FC = () => {
                 <div className="max-w-md mx-auto mb-16">
                     <div className="space-y-1">
                         {[
-                            { label: "Your Category", value: "Postgraduate", color: "bg-primary" },
+                            { label: "Your Category", value: "Non EU Postgrad / Undergrad", color: "bg-primary" },
                             { label: "Contract Length", value: "Full Acad. Year / 51 weeks", color: "bg-blue-500" },
-                            { label: "Village Availability", value: "Supply at time of allocation", color: "bg-purple-500" },
-                            { label: "Allocation Result", value: "Your assigned accommodation", color: "bg-amber-500" },
                         ].map((item, i, arr) => (
                             <div key={i} className="flex flex-col items-center">
                                 <div className={`w-full ${item.color}/10 border border-white/10 backdrop-blur rounded-xl p-4 text-center`}>

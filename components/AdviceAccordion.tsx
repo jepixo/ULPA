@@ -63,6 +63,8 @@ const AdviceAccordion: React.FC = () => {
     );
 };
 
+import FormattedText from './FormattedText';
+
 interface AccordionItemProps {
     item: AdviceItem;
     isOpen: boolean;
@@ -90,7 +92,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item, isOpen, onToggle })
             {isOpen && (
                 <div className="px-5 md:px-6 pb-5 md:pb-6 animate-fadeIn">
                     <div className="border-t border-gray-100 pt-4">
-                        <p className="text-gray-600 leading-relaxed">{item.content}</p>
+                        <p className="text-gray-600 leading-relaxed">
+                            <FormattedText text={item.content} />
+                        </p>
                     </div>
                 </div>
             )}

@@ -31,7 +31,9 @@ const ProcessTimeline: React.FC = () => {
                         <span className="text-2xl flex-shrink-0">⚠️</span>
                         <div>
                             <h4 className="font-bold text-amber-900 text-lg mb-1">Important</h4>
-                            <p className="text-amber-800 leading-relaxed">{IMPORTANT_NOTICE}</p>
+                            <p className="text-amber-800 leading-relaxed">
+                                <FormattedText text={IMPORTANT_NOTICE} />
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -46,6 +48,8 @@ interface StepCardProps {
     isLast: boolean;
 }
 
+import FormattedText from './FormattedText';
+
 const StepCard: React.FC<StepCardProps> = ({ step, index }) => {
     const isEven = index % 2 === 0;
 
@@ -59,27 +63,7 @@ const StepCard: React.FC<StepCardProps> = ({ step, index }) => {
                         <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">{step.title}</h3>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                        {step.description.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/).map((part, i) => {
-                            if (part.startsWith('**') && part.endsWith('**')) {
-                                return <strong key={i} className="text-gray-900 font-bold">{part.slice(2, -2)}</strong>;
-                            }
-                            if (part.startsWith('[') && part.includes('](')) {
-                                const label = part.match(/\[(.*?)\]/)?.[1];
-                                const url = part.match(/\((.*?)\)/)?.[1];
-                                return (
-                                    <a
-                                        key={i}
-                                        href={url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-primary hover:underline font-medium"
-                                    >
-                                        {label}
-                                    </a>
-                                );
-                            }
-                            return part;
-                        })}
+                        <FormattedText text={step.description} />
                     </p>
                 </div>
             </div>

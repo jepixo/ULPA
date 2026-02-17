@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ACCOMMODATIONS } from '../data/accommodations';
 import type { Accommodation } from '../types';
 import { CheckIcon, CrossIcon, InfoIcon, VideoIcon, PinIcon, PhoneIcon, EmailIcon } from './Icons';
@@ -7,6 +7,8 @@ import VideoPlayer from './VideoPlayer';
 
 const PropertyDetails: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
+    const navigate = useNavigate();
+    const [imgError, setImgError] = useState(false);
     const accommodation = ACCOMMODATIONS.find(acc => acc.id === slug);
 
     if (!accommodation) {
@@ -24,19 +26,30 @@ const PropertyDetails: React.FC = () => {
     const prices = acc.contractOptions.map(c => c.typicalTotalPriceEUR);
     const minPrice = Math.min(...prices);
 
+    // Fallback image logic
+    const isApartment = acc.name.toLowerCase().includes('apartment') || acc.name.toLowerCase().includes('residence') || acc.name.toLowerCase().includes('hall') || acc.name.toLowerCase().includes('park');
+    const fallbackImg = isApartment ? '/ULPA/images/apartment.svg' : '/ULPA/images/village.svg';
+    const mainImg = imgError ? fallbackImg : (acc.imageURLs[0] || fallbackImg);
+
     return (
         <div className="bg-white min-h-screen animate-fadeIn">
             {/* Hero Section */}
             <div className="relative h-[50vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
-                {acc.imageURLs[0] && (
-                    <img src={acc.imageURLs[0]} alt={acc.name} className="w-full h-full object-cover opacity-30" />
-                )}
+                <img
+                    src={mainImg}
+                    alt={acc.name}
+                    className={`w-full h-full object-cover transition-opacity duration-300 ${imgError ? 'opacity-40' : 'opacity-30'}`}
+                    onError={() => !imgError && setImgError(true)}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 w-full p-8 md:p-16">
                     <div className="container mx-auto max-w-6xl">
-                        <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+                        <button
+                            onClick={() => navigate(-1)}
+                            className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors cursor-pointer"
+                        >
                             ← Back to All Accommodations
-                        </Link>
+                        </button>
                         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                             <div>
                                 {/* Badges */}

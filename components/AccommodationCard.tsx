@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import type { Accommodation } from '../types';
 import { ChevronDownIcon } from './Icons';
 import VideoPlayer from './VideoPlayer';
@@ -9,10 +9,22 @@ interface AccommodationCardProps {
 }
 
 const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) => {
+  const navigate = useNavigate();
+  const [imgError, setImgError] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const acc = accommodation;
 
-  const toggleSection = (section: string) => {
+  const handleCardClick = () => {
+    navigate(`/property/${acc.id}`);
+  };
+
+  // Fallback image logic
+  const isApartment = acc.name.toLowerCase().includes('apartment') || acc.name.toLowerCase().includes('residence') || acc.name.toLowerCase().includes('hall') || acc.name.toLowerCase().includes('park');
+  const fallbackImg = isApartment ? '/ULPA/images/apartment.svg' : '/ULPA/images/village.svg';
+  const mainImg = imgError ? fallbackImg : (acc.imageURLs[0] || fallbackImg);
+
+  const toggleSection = (section: string, e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setExpandedSection(expandedSection === section ? null : section);
   };
 
@@ -28,12 +40,18 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
   const contractLengths = [...new Set(acc.contractOptions.map(c => c.lengthWeeks))].sort();
 
   return (
-    <div className="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div
+      onClick={handleCardClick}
+      className="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+    >
       {/* Header with gradient */}
       <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden">
-        {acc.imageURLs[0] && (
-          <img src={acc.imageURLs[0]} alt={acc.name} className="w-full h-full object-cover opacity-50" />
-        )}
+        <img
+          src={mainImg}
+          alt={acc.name}
+          className={`w-full h-full object-cover transition-opacity duration-300 ${imgError ? 'opacity-40' : 'opacity-50'}`}
+          onError={() => !imgError && setImgError(true)}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
         {/* Top Badges */}
@@ -82,7 +100,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
           <AccordionSection
             title="💶 Pricing Breakdown"
             isOpen={expandedSection === 'pricing'}
-            onToggle={() => toggleSection('pricing')}
+            onToggle={(e) => toggleSection('pricing', e)}
           >
             <div className="space-y-2">
               {acc.contractOptions.map((opt, i) => (
@@ -109,7 +127,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
           <AccordionSection
             title="🏠 Room Types"
             isOpen={expandedSection === 'rooms'}
-            onToggle={() => toggleSection('rooms')}
+            onToggle={(e) => toggleSection('rooms', e)}
           >
             <div className="space-y-2">
               {acc.roomOptions.map((room, i) => (
@@ -128,7 +146,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
           <AccordionSection
             title="📊 Pros & Cons"
             isOpen={expandedSection === 'analysis'}
-            onToggle={() => toggleSection('analysis')}
+            onToggle={(e) => toggleSection('analysis', e)}
           >
             <div className="space-y-3">
               <div className="bg-green-50/50 border border-green-100 rounded-lg p-3">
@@ -161,7 +179,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
             <AccordionSection
               title="🎥 Video Tour"
               isOpen={expandedSection === 'video'}
-              onToggle={() => toggleSection('video')}
+              onToggle={(e) => toggleSection('video', e)}
             >
               <VideoPlayer url={acc.videoURLs[0]} />
             </AccordionSection>
@@ -188,6 +206,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({ accommodation }) 
           href={acc.bookingURL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
           className="w-full bg-primary text-white font-bold text-sm py-3 px-4 rounded-xl flex items-center justify-center transition-all duration-300 hover:bg-gray-900 hover:shadow-lg active:scale-[0.98]"
         >
           {acc.bookingType === 'ul-portal' ? 'UL Portal' : 'Book Direct'} ↗
@@ -208,12 +227,12 @@ const Badge: React.FC<{ text: string; color: string }> = ({ text, color }) => (
 interface AccordionSectionProps {
   title: string;
   isOpen: boolean;
-  onToggle: () => void;
+  onToggle: (e: React.MouseEvent) => void;
   children: React.ReactNode;
 }
 
 const AccordionSection: React.FC<AccordionSectionProps> = ({ title, isOpen, onToggle, children }) => (
-  <div className="border border-gray-100 rounded-xl overflow-hidden">
+  <div className="border border-gray-100 rounded-xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
     <button
       onClick={onToggle}
       className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 transition-colors"

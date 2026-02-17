@@ -38,7 +38,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/apartment.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipM-21K6kY9mF4gR4v6n_fGzJ1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=F5t8h8j7A_M"],
         phone: "+353 61 237500",
         email: "cappavillavillage@ul.ie",
@@ -76,7 +76,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/apartment.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipN3-98gEOG8-k-N_tH8t1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=mRhGogh3dJ0"],
         phone: "+353 61 237500",
         email: "cappavillavillage@ul.ie",
@@ -114,7 +114,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/village.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipP_z5fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=D0vLneEA3gM"],
         phone: "+353 61 237000",
         email: "thomondvillage@ul.ie",
@@ -149,7 +149,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/apartment.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipN6fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=rXWNoEV4YQE", "https://www.youtube.com/watch?v=BLZ5ZG9eNG8"],
         phone: "+353 61 202977",
         email: "dromroevillage@ul.ie",
@@ -184,7 +184,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/village.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipO_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 202347",
         email: "plasseyvillage@ul.ie",
@@ -219,7 +219,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/village.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipP_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 202331",
         email: "kilmurryvillage@ul.ie",
@@ -258,7 +258,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/village.svg"],
+        imageURLs: ["https://www.ul.ie/sites/default/files/styles/width_of_content_area/public/2025-04/_DSC0276%20%281%29.jpg.webp?itok=kLJqlWCd"],
         videoURLs: [],
         phone: "+353 61 202977",
         email: "accommodation@ul.ie",
@@ -280,7 +280,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
             { lengthWeeks: 38, postgradAvailable: true, typicalTotalPriceEUR: 5793, utilitiesIncluded: true, priceNotes: "Ensuite in 5/6/7-Bed" },
             { lengthWeeks: 38, postgradAvailable: true, typicalTotalPriceEUR: 7294, utilitiesIncluded: true, priceNotes: "Ensuite in 2-Bed" },
             { lengthWeeks: 51, postgradAvailable: true, typicalTotalPriceEUR: 7658, utilitiesIncluded: true, priceNotes: "Ensuite 3/4-Bed" },
-            { lengthWeeks: 51, postgradAvailable: true, typicalTotalPriceEUR: 7376, utilitiesIncluded: true, priceNotes: "Standard 3/4-Bed" },
+            { lengthWeeks: 51, postgradAvailable: true, typicalTotalPriceEUR: 7658, utilitiesIncluded: true, priceNotes: "Standard 3/4-Bed" },
         ],
         roomOptions: [
             { type: "5/6/7-bedroom apartment (Standard)", ensuite: false, sharedBathroom: true },
@@ -299,7 +299,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/residence.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/gps-cs-s/AHVAwerkVUM4gtAlM5RK7gc7v5e9lob87LVKzdjusKPPyeUtdindfoZ9S0A46f5naQ2wNKyi_ckG6zd3mWWaZZ2-jf5khAsEz_W6Ala1qLX0FZQlF0Vf34EQ6z1O0AmjlmkKVJACk0lHuw=w493-h240-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=VIaUGHJQLD8"],
         phone: "+353 61 330199",
         email: "troyvillage@ul.ie",
@@ -334,7 +334,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "ul-portal",
         bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
-        imageURLs: ["/ULPA/images/residence.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipO_zG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 330199",
         email: "groodyvillage@ul.ie",
@@ -372,7 +372,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "direct-private",
         bookingURL: "https://groodystudentpark.ie/apply-online/",
-        imageURLs: ["/ULPA/images/residence.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipN_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 350100",
         email: "info@groodystudentpark.ie",
@@ -406,7 +406,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "direct-private",
         bookingURL: "https://www.brookfieldhall.com/rates-booking-dates/",
-        imageURLs: ["/ULPA/images/residence.svg"],
+        imageURLs: ["https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3CWwq0u6dVM0tuEhABOEjQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=79.939865&pitch=0&thumbfov=100"],
         videoURLs: [],
         phone: "+353 61 333888",
         email: "info@brookfieldhall.com",
@@ -439,7 +439,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
 
         bookingType: "direct-private",
         bookingURL: "http://www.parkviewhallstudents.com",
-        imageURLs: ["/ULPA/images/residence.svg"],
+        imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipM_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "",
         email: "parkviewhallstudents@outlook.com",
