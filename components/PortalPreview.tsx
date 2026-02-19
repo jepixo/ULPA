@@ -98,7 +98,7 @@ const PortalPreview: React.FC = () => {
                                         </div>
                                     </div>
                                     <div className="bg-[#f0f9ff] p-4 border-l-4 border-[#007dba] text-[11px] text-gray-600 italic leading-relaxed">
-                                        <strong>Advice:</strong> PPS number is not required for international students. If you are not an Irish resident, leave this field blank and ensure you've ticked the checkbox above.
+                                        <strong>Advice:</strong> PPS number is not required for international students. If you are not an Irish resident, leave this field blank and make sure the checkbox above is selected.<br></br> CAO applies only to undergraduate applicants. If a warning message appears, close it and enter your UL student ID.
                                     </div>
                                 </div>
                             )}
