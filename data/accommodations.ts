@@ -37,7 +37,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Postgrad-dedicated residence but does NOT appear in the 51-week postgrad preference list on the UL accommodation portal. May require direct contact with accommodation office.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/quigley-residence",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipM-21K6kY9mF4gR4v6n_fGzJ1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=F5t8h8j7A_M"],
         phone: "+353 61 237500",
@@ -75,7 +75,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Partial postgrad blocks. High probability for postgrads, especially 51-week contracts.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/cappavilla",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipN3-98gEOG8-k-N_tH8t1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=mRhGogh3dJ0"],
         phone: "+353 61 237500",
@@ -113,11 +113,11 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Partial postgrad blocks. High probability for postgrads on 51-week contracts.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/thomond",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipP_z5fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=D0vLneEA3gM"],
         phone: "+353 61 237000",
-        email: "thomondvillage@ul.ie",
+        email: "accomodation@ul.ie",
     },
 
     {
@@ -148,7 +148,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Mixed allocation. Possible for postgrads but not guaranteed — depends on supply.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/dromroe",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipN6fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=rXWNoEV4YQE", "https://www.youtube.com/watch?v=BLZ5ZG9eNG8"],
         phone: "+353 61 202977",
@@ -183,7 +183,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Mostly undergrad-focused. Postgrads can technically be placed here but it is rare and not ideal.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/plassey",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipO_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 202347",
@@ -218,7 +218,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Mostly undergrad. Least predictable for a postgrad 51-week placement.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/kilmurry",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipP_fG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 202331",
@@ -257,7 +257,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "51-week postgrad focus. High allocation probability for postgrads.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/drominbeg-square",
         imageURLs: ["https://www.ul.ie/sites/default/files/styles/width_of_content_area/public/2025-04/_DSC0276%20%281%29.jpg.webp?itok=kLJqlWCd"],
         videoURLs: [],
         phone: "+353 61 202977",
@@ -298,7 +298,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Mixed allocation. 51-week postgrad contracts available.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/troy-village",
         imageURLs: ["https://lh3.googleusercontent.com/gps-cs-s/AHVAwerkVUM4gtAlM5RK7gc7v5e9lob87LVKzdjusKPPyeUtdindfoZ9S0A46f5naQ2wNKyi_ckG6zd3mWWaZZ2-jf5khAsEz_W6Ala1qLX0FZQlF0Vf34EQ6z1O0AmjlmkKVJACk0lHuw=w493-h240-k-no"],
         videoURLs: ["https://www.youtube.com/watch?v=VIaUGHJQLD8"],
         phone: "+353 61 330199",
@@ -333,7 +333,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
         allocationNotes: "Mixed allocation. UL-managed blocks within a larger development.",
 
         bookingType: "ul-portal",
-        bookingURL: "https://studentliving.ul.ie/index.jsp?p=119&n=144",
+        bookingURL: "https://www.ul.ie/accommodation/living/groody",
         imageURLs: ["https://lh3.googleusercontent.com/p/AF1QipO_zG1zG1zG1zG1zG1zG1zG1zG1zG1zG1zG=w800-h600-k-no"],
         videoURLs: [],
         phone: "+353 61 330199",

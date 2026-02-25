@@ -102,18 +102,41 @@ const SCENARIOS: ScenarioData[] = [
         downside: 'Extra move(s), deposits, utility setups, and potential small premium for short-term arrangements.',
         reasoning: 'Daft listing patterns and student marketplace behaviour in April–May show sublets increase significantly. Proactive search in Mar–Apr yields high success rates.',
     },
+    {
+        id: 'D',
+        title: 'Skip UL Entirely — Go Fully Private',
+        subtitle: 'Secure a private rental in Castletroy/Limerick for the full year from day one',
+        color: 'from-rose-500 to-pink-600',
+        colorLight: 'bg-rose-50 border-rose-200',
+        badge: '🌐 Full Freedom',
+        costRange: '€6,000 – €12,000',
+        gettability: 'Moderate',
+        gettabilityPercent: '40% – 70%',
+        gettabilityColor: 'text-blue-600 bg-blue-50',
+        details: [
+            { label: 'Shared room, house-share (12 months)', value: '~€500–€650/mo = €6,000–€7,800' },
+            { label: 'Ensuite private room (12 months)', value: '~€700–€900/mo = €8,400–€10,800' },
+            { label: 'Studio apartment (12 months)', value: '~€900–€1,100/mo = €10,800–€13,200' },
+            { label: 'Typical bills on top (if not included)', value: '~€50–€100/mo per person' },
+        ],
+        upside: 'Complete independence — pick your exact location, housemates, and contract length. No allocation lottery, no UL portal stress. Potentially cheaper at the shared-room tier. Dissertation from home is viable if you have reliable internet and a quiet space.',
+        downside: 'Castletroy rental market is competitive and seasonal — good rooms near campus are snapped up fast. No UL Sport inclusion. Utilities, broadband, and deposits add up. Distance to campus matters for lab/library access. Zero safety net if your landlord sells or re-lets.',
+        reasoning: 'Daft.ie listings in Castletroy consistently show 15–30 rooms available in the Aug–Sep window when students are searching simultaneously. Success requires an early, targeted search (May–July for Aug move-in) and willingness to move quickly on viewings.',
+    },
 ];
 
 const COST_COMPARISONS: CostComparison[] = [
     { scenario: '51-week (31st Aug 2026 to 23rd Aug 2027)', range: '€7,472 – €10,019', source: 'UL Portal 2026/27' },
     { scenario: 'Full Acad. Year + UL summer extension', range: '€7,200 – €9,200', source: 'UL Published Rates' },
     { scenario: 'Full Acad. Year + private summer (mid tier)', range: '~€7,900', source: 'Daft.ie + UL Fees' },
+    { scenario: 'Fully Private (Castletroy, 12 months)', range: '€6,000 – €13,200', source: 'Daft.ie Listings' },
 ];
 
 const PROBABILITY_ROWS: ProbabilityRow[] = [
     { item: 'Securing preferred 51-wk ensuite (Cappavilla/Thomond)', probability: '15% – 40%', color: 'text-orange-500 bg-orange-100', source: 'UL Postgrad Page' },
     { item: 'UL granting summer extension to current students', probability: '25% – 50%', color: 'text-amber-600 bg-amber-100', source: 'UL Summer Bookings' },
     { item: 'Finding mid-tier private summer ensuite (Mar–Apr search)', probability: '70% – 85%', color: 'text-green-600 bg-green-100', source: 'Daft.ie Patterns' },
+    { item: 'Securing quality private 12-month room near campus (May–Jul search)', probability: '40% – 70%', color: 'text-blue-600 bg-blue-100', source: 'Daft.ie Castletroy' },
 ];
 
 const STEPS: RecommendationStep[] = [
@@ -183,6 +206,13 @@ const ScenarioPlanner: React.FC = () => {
                         <div className="flex items-start gap-2"><span className="text-primary">•</span> 51-Week Period: <strong>31st Aug 2026 to 23rd Aug 2027</strong></div>
                         <div className="flex items-start gap-2"><span className="text-primary">•</span> Summer period: <strong>Late May → 23 Aug 2027</strong> (≈ 13 weeks)</div>
                         <div className="flex items-start gap-2"><span className="text-primary">•</span> Private summer rents from Daft.ie Castletroy listing patterns</div>
+                        <div className="flex items-start gap-2 md:col-span-2">
+                            <span className="text-amber-400">•</span>
+                            <span>
+                                <strong className="text-amber-300">Dissertation assumed:</strong>{' '}
+                                These paths assume you are a postgrad whose <strong>taught modules end in May but dissertation/thesis submission runs into August or September</strong> — which is the norm for most 1-year Masters programmes at UL. If your <strong>entire course concludes in May</strong> (e.g. a taught-only programme with no summer component), the <strong>Full Academic Year contract is the better and cheaper choice</strong> — no summer bridging needed.
+                            </span>
+                        </div>
                     </div>
                     <p className="text-gray-400 text-xs mt-4">Sources: <a href="https://www.ul.ie/accommodation/applying/fees-and-payment-information" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">UL Fees</a> · <a href="https://www.ul.ie/campus-life-services/conferences-sports-events/news/summer-accommodation-2026-bookings" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">UL Summer Bookings</a> · <a href="https://www.daft.ie/sharing/castletroy-limerick" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Daft.ie</a> · <a href="https://www.ul.ie/accommodation/postgraduate-students" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">UL Postgrad Page</a></p>
                 </div>
@@ -332,7 +362,9 @@ const ScenarioPlanner: React.FC = () => {
                     <div className="text-center mb-8">
                         <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary bg-primary/20 px-4 py-1.5 rounded-full mb-4">Evidence-Backed</span>
                         <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">Recommended Action Plan</h3>
-                        <p className="text-gray-500 max-w-2xl mx-auto">You want campus proximity and a guaranteed ensuite room. Given your finish date 19 May 2027:</p>
+                        <p className="text-gray-500 max-w-2xl mx-auto">
+                            Assumes you are a postgrad with a <strong>dissertation or thesis extending past May</strong> (e.g. Aug/Sep submission). If your entire course ends in May, skip the summer planning steps — the <strong>Full Academic Year contract alone</strong> is sufficient and cheaper.
+                        </p>
                     </div>
 
                     <div className="space-y-4 max-w-3xl mx-auto">
@@ -394,6 +426,14 @@ const ScenarioPlanner: React.FC = () => {
                         <div className="bg-white/5 border border-white/10 rounded-xl p-5">
                             <p className="font-bold text-amber-400 mb-1">If your top priority is: one-move-only convenience</p>
                             <p className="text-gray-300 text-sm leading-relaxed">Apply for <strong>51-week</strong> and hope for the best — cost likely <strong>€7k–€10k</strong> depending on village. Accept the specific village assignment and room type provided by UL.</p>
+                        </div>
+                        <div className="bg-white/5 border border-rose-400/20 rounded-xl p-5 border">
+                            <p className="font-bold text-rose-400 mb-1">If your top priority is: full freedom, no lottery, no UL dependency</p>
+                            <p className="text-gray-300 text-sm leading-relaxed">
+                                Go <strong>fully private</strong> — but start your search <strong>early (May–July)</strong> for an August move-in. Castletroy shared rooms can be as low as <strong>€500–€650/month</strong>, making this the cheapest tier if you move fast.
+                                The main trade-offs are: no UL Sport inclusion, no on-site maintenance, and <strong>zero allocation guarantee</strong> — you are at the mercy of the private market.
+                                Best suited for students who are <strong>independent, budget-conscious, and comfortable living slightly off-campus</strong>.
+                            </p>
                         </div>
                     </div>
                 </div>
