@@ -3,7 +3,7 @@ import ProcessTimeline from './ProcessTimeline';
 import AllocationVisualizer from './AllocationVisualizer';
 import AccommodationFilters from './AccommodationFilters';
 import AccommodationCard from './AccommodationCard';
-import AdviceAccordion from './AdviceAccordion';
+
 import ScenarioPlanner from './ScenarioPlanner';
 import PortalPreview from './PortalPreview';
 import { ACCOMMODATIONS } from '../data/accommodations';
@@ -88,7 +88,7 @@ const HomePage: React.FC = () => {
                     </h1>
                     <p className="text-lg md:text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed animate-fadeIn">
                         Understand how allocation works, compare your options, and choose strategically.
-                        
+
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fadeIn">
                         <button
@@ -232,8 +232,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
 
-            {/* ── Section 5: Advice ── */}
-            <AdviceAccordion />
+
 
             {/* ── Section 6: Scenarios & Strategy ── */}
             <ScenarioPlanner />
