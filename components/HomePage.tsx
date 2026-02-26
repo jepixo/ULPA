@@ -67,6 +67,21 @@ const HomePage: React.FC = () => {
         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const scrollToVillagesWithFilter = (patch: Partial<FilterState>) => {
+        // Reset all filters first, then apply the selected patch
+        setFilters({
+            show51WeekOnly: false,
+            ensuiteOnly: false,
+            ulManagedOnly: false,
+            postgradFocused: false,
+            maxWalkMinutes: null,
+            locationType: 'all',
+            ...patch,
+        });
+        // Small delay so React re-renders the filtered list before we scroll
+        setTimeout(() => document.getElementById('villages')?.scrollIntoView({ behavior: 'smooth' }), 50);
+    };
+
     return (
         <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
             {/* ── Hero Section ── */}
@@ -90,32 +105,37 @@ const HomePage: React.FC = () => {
                         Understand how allocation works, compare your options, and choose strategically.
 
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fadeIn">
+                    <div className="flex flex-wrap items-center justify-center gap-3 animate-fadeIn">
                         <button
                             onClick={() => scrollTo('portal-preview')}
-                            className="bg-primary text-white font-bold px-8 py-4 rounded-xl text-base transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 active:scale-[0.98] w-full sm:w-auto"
+                            className="bg-primary text-white font-bold px-7 py-3.5 rounded-xl text-sm transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 active:scale-[0.98]"
                         >
                             Portal Preview
                         </button>
                         <button
                             onClick={() => scrollTo('how-it-works')}
-                            className="bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-xl text-base border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98] w-full sm:w-auto"
+                            className="bg-white/10 backdrop-blur text-white font-bold px-7 py-3.5 rounded-xl text-sm border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98]"
                         >
                             How It Works
                         </button>
                         <button
-                            onClick={() => scrollTo('villages')}
-                            className="bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-xl text-base border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98] w-full sm:w-auto"
+                            onClick={() => scrollToVillagesWithFilter({})}
+                            className="bg-white/10 backdrop-blur text-white font-bold px-7 py-3.5 rounded-xl text-sm border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98]"
                         >
                             Compare Villages
                         </button>
                         <button
                             onClick={() => scrollTo('scenarios')}
-                            className="bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-xl text-base border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98] w-full sm:w-auto"
+                            className="bg-white/10 backdrop-blur text-white font-bold px-7 py-3.5 rounded-xl text-sm border border-white/20 transition-all duration-300 hover:bg-white/20 active:scale-[0.98]"
                         >
                             Your 3 Paths
                         </button>
-
+                        <button
+                            onClick={() => scrollTo('allocation')}
+                            className="bg-emerald-500/20 backdrop-blur text-emerald-300 font-bold px-7 py-3.5 rounded-xl text-sm border border-emerald-500/30 transition-all duration-300 hover:bg-emerald-500/30 active:scale-[0.98] flex items-center gap-2"
+                        >
+                            <span>✅</span> Official FAQ
+                        </button>
                     </div>
 
                     {/* ── Disclaimer / About Banner ── */}
@@ -155,18 +175,49 @@ const HomePage: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Quick Stats */}
+                    {/* Quick Stats — clickable, apply filters */}
                     <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                        {[
-                            { value: '12', label: 'Accommodations' },
-                            { value: '9', label: 'UL Managed' },
-                            { value: '5', label: '51-Week Options' },
-                            { value: '3', label: 'Private Options' },
-                        ].map((stat, i) => (
-                            <div key={i} className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4">
+                        {([
+                            {
+                                value: '12',
+                                label: 'Accommodations',
+                                hint: 'View all',
+                                filter: {} as Partial<FilterState>,
+                                color: 'hover:border-primary/40 hover:bg-primary/10',
+                            },
+                            {
+                                value: '9',
+                                label: 'UL Managed',
+                                hint: 'Filter: UL portal only',
+                                filter: { ulManagedOnly: true } as Partial<FilterState>,
+                                color: 'hover:border-blue-400/40 hover:bg-blue-400/10',
+                            },
+                            {
+                                value: '5',
+                                label: '51-Week Options',
+                                hint: 'Filter: 51-week contracts',
+                                filter: { show51WeekOnly: true } as Partial<FilterState>,
+                                color: 'hover:border-violet-400/40 hover:bg-violet-400/10',
+                            },
+                            {
+                                value: '3',
+                                label: 'Private Options',
+                                hint: 'Filter: private / direct-book',
+                                filter: { ulManagedOnly: false, locationType: 'off-campus' } as Partial<FilterState>,
+                                color: 'hover:border-amber-400/40 hover:bg-amber-400/10',
+                            },
+                        ] as const).map((stat, i) => (
+                            <button
+                                key={i}
+                                onClick={() => scrollToVillagesWithFilter(stat.filter)}
+                                title={stat.hint}
+                                className={`group bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 text-left transition-all duration-200 cursor-pointer active:scale-[0.97] ${stat.color
+                                    }`}
+                            >
                                 <p className="text-2xl font-extrabold text-primary">{stat.value}</p>
-                                <p className="text-xs text-gray-400 mt-1">{stat.label}</p>
-                            </div>
+                                <p className="text-xs text-gray-400 mt-1 group-hover:text-gray-200 transition-colors">{stat.label}</p>
+                                <p className="text-[10px] text-gray-600 mt-1.5 group-hover:text-gray-400 transition-colors leading-tight">{stat.hint} ↓</p>
+                            </button>
                         ))}
                     </div>
                 </div>
